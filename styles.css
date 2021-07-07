@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Roboto+Mono:wght@200;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --red-color: #BE5B4B;
+    --purple-color: #E9A8C6;
+    --orange-color: #ED7B49;
+    --yellow-color: #FCCF6B;
+    --black-color: #0000;
+    --white-color: #fff;
+}
+
+body {
+    background-color: var(--red-color);
+    font-family: 'Roboto Mono', sans-serif;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.header {
+    display: block;
+    text-align: center;
+    background-color: var(--red-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header__heading {
+    font-family: 'Prata', serif;
+    font-size: 110px;
+    padding: 1rem;
+}
+
+.header__subheading {
+    margin-bottom: 1rem;
+}
+
+.section {
+    max-width: 80%;
+    background-color: var(--black-color);
+    margin: 250px auto 0;
+    z-index: -100;
+}
+
+.section__article {
+    margin: 2rem;
+}
+
+.section__article--first {
+    background-color: var(--purple-color);
+    border-radius: 1rem 0 1rem 0;
+    border-right: 3px solid var(--white-color);
+    border-bottom: 3px solid var(--white-color);
+    padding: 2rem;
+}
+
+.section__article--second {
+    background-color: var(--orange-color);
+    border-radius: 1rem 0 1rem 0;
+    margin: 2rem;
+    padding: 2rem;
+    border-top: 3px solid var(--white-color);
+    border-left: 3px solid var(--white-color);
+}
+
+.section__article--third {
+    background-color: var(--yellow-color);
+    border-top: 3px solid var(--white-color);
+    border-right: 3px solid var(--white-color);
+    border-radius: 0 1rem 0 1rem;
+    padding: 2rem;
+}
+
+.article__heading {
+    font-family: 'Roboto Mono';
+    font-weight: 400;
+    padding: 0.5rem;
+}
+
+.article__author {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.article__paragraph {
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--red-color);
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.social-icons {
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.social-icons i {
+    margin: 0 2rem 0 2rem;
+}
+
+@media (max-width:767px) {
+    .header__heading {
+        font-family: 'Prata', serif;
+        font-size: 50px;
+    }
+    .section {
+        margin: 120px auto 0;
+    }
+    .social-icons i {
+        font-size: 2rem;
+    }
+}
