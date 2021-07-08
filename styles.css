@@ -7,12 +7,14 @@
 }
 
 :root {
-    --red-color: #BE5B4B;
-    --purple-color: #E9A8C6;
+    /* --red-color: #BE5B4B; */
+    /* --purple-color: #E9A8C6; */
     --orange-color: #ED7B49;
     --yellow-color: #FCCF6B;
     --black-color: #0000;
     --white-color: #fff;
+    --red-color: #ABAFD6;
+    --purple-color: #a7d07e;
 }
 
 body {
@@ -40,12 +42,15 @@ body {
 
 .header__heading {
     font-family: 'Prata', serif;
+    text-shadow: 1px 2px var(--white-color);
     font-size: 110px;
     padding: 1rem;
 }
 
 .header__subheading {
     margin-bottom: 1rem;
+    font-weight: 500;
+    color: var(--white-color)
 }
 
 .section {
@@ -124,6 +129,15 @@ footer {
     }
     .section {
         margin: 120px auto 0;
+    }
+    .footer {
+        margin-top: 1rem;
+    }
+    .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem 0 0 0;
     }
     .social-icons i {
         font-size: 2rem;
