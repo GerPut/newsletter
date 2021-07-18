@@ -7,18 +7,19 @@
 }
 
 :root {
-    /* --red-color: #BE5B4B; */
-    /* --purple-color: #E9A8C6; */
+    --red-color: #BE5B4B;
+    --purple-color: #E9A8C6;
     --orange-color: #ED7B49;
     --yellow-color: #FCCF6B;
-    --black-color: #0000;
+    --black-color: #000;
     --white-color: #fff;
-    --red-color: #ABAFD6;
-    --purple-color: #a7d07e;
+    --bluegrey-color: #ABAFD6;
+    --green-color: #a7d07e;
+    --lightgrey-color: #D8dbe2;
 }
 
 body {
-    background-color: var(--red-color);
+    background-color: var(--lightgrey-color);
     font-family: 'Roboto Mono', sans-serif;
     width: 100%;
     font-size: 1rem;
@@ -34,7 +35,7 @@ body {
 .header {
     display: block;
     text-align: center;
-    background-color: var(--red-color);
+    background-color: var(--lightgrey-color);
     position: fixed;
     top: 0;
     width: 100%;
@@ -42,7 +43,6 @@ body {
 
 .header__heading {
     font-family: 'Prata', serif;
-    text-shadow: 1px 2px var(--white-color);
     font-size: 110px;
     padding: 1rem;
 }
@@ -50,12 +50,11 @@ body {
 .header__subheading {
     margin-bottom: 1rem;
     font-weight: 500;
-    color: var(--white-color)
 }
 
 .section {
     max-width: 80%;
-    background-color: var(--black-color);
+    background-color: var(--lightgrey-color);
     margin: 250px auto 0;
     z-index: -100;
 }
@@ -65,10 +64,10 @@ body {
 }
 
 .section__article--first {
-    background-color: var(--purple-color);
+    background-color: var(--green-color);
     border-radius: 1rem 0 1rem 0;
-    border-right: 3px solid var(--white-color);
-    border-bottom: 3px solid var(--white-color);
+    border-right: 3px solid var(--black-color);
+    border-bottom: 3px solid var(--black-color);
     padding: 2rem;
 }
 
@@ -77,14 +76,14 @@ body {
     border-radius: 1rem 0 1rem 0;
     margin: 2rem;
     padding: 2rem;
-    border-top: 3px solid var(--white-color);
-    border-left: 3px solid var(--white-color);
+    border-top: 3px solid var(--black-color);
+    border-left: 3px solid var(--black-color);
 }
 
 .section__article--third {
     background-color: var(--yellow-color);
-    border-top: 3px solid var(--white-color);
-    border-right: 3px solid var(--white-color);
+    border-top: 3px solid var(--black-color);
+    border-right: 3px solid var(--black-color);
     border-radius: 0 1rem 0 1rem;
     padding: 2rem;
 }
@@ -105,7 +104,7 @@ body {
 }
 
 footer {
-    background-color: var(--red-color);
+    background-color: var(--lightgrey-color);
     width: 100%;
     display: block;
     text-align: center;
