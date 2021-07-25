@@ -16,10 +16,11 @@
     --bluegrey-color: #ABAFD6;
     --green-color: #a7d07e;
     --lightgrey-color: #D8dbe2;
+    --lightblue-color: #B0E3F9;
 }
 
 body {
-    background-color: var(--lightgrey-color);
+    background-color: var(--lightblue-color);
     font-family: 'Roboto Mono', sans-serif;
     width: 100%;
     font-size: 1rem;
@@ -35,7 +36,7 @@ body {
 .header {
     display: block;
     text-align: center;
-    background-color: var(--lightgrey-color);
+    background-color: var(--lightblue-color);
     position: fixed;
     top: 0;
     width: 100%;
@@ -54,7 +55,7 @@ body {
 
 .section {
     max-width: 80%;
-    background-color: var(--lightgrey-color);
+    background-color: var(--lighblue-color);
     margin: 250px auto 0;
     z-index: -100;
 }
@@ -104,7 +105,7 @@ body {
 }
 
 footer {
-    background-color: var(--lightgrey-color);
+    background-color: var(--lightblue-color);
     width: 100%;
     display: block;
     text-align: center;
