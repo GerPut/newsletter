@@ -20,7 +20,7 @@
 }
 
 body {
-    background-color: var(--lightblue-color);
+    background-color: var(--bluegrey-color);
     font-family: 'Roboto Mono', sans-serif;
     width: 100%;
     font-size: 1rem;
@@ -36,10 +36,11 @@ body {
 .header {
     display: block;
     text-align: center;
-    background-color: var(--lightblue-color);
+    background-color: var(--bluegrey-color);
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 100;
 }
 
 .header__heading {
@@ -66,26 +67,52 @@ body {
 
 .section__article--first {
     background-color: var(--green-color);
-    border-radius: 1rem 0 1rem 0;
     border-right: 3px solid var(--black-color);
     border-bottom: 3px solid var(--black-color);
+    border-left: 1px solid var(--black-color);
+    border-top: 1px solid var(--black-color);
     padding: 2rem;
 }
 
 .section__article--second {
     background-color: var(--orange-color);
-    border-radius: 1rem 0 1rem 0;
     margin: 2rem;
     padding: 2rem;
-    border-top: 3px solid var(--black-color);
     border-left: 3px solid var(--black-color);
+    border-bottom: 3px solid var(--black-color);
+    border-right: 1px solid var(--black-color);
+    border-top: 1px solid var(--black-color);
 }
 
 .section__article--third {
     background-color: var(--yellow-color);
-    border-top: 3px solid var(--black-color);
+    border-top: 1px solid var(--black-color);
     border-right: 3px solid var(--black-color);
-    border-radius: 0 1rem 0 1rem;
+    border-bottom: 3px solid var(--black-color);
+    border-left: 1px solid var(--black-color);
+    padding: 2rem;
+}
+
+form {
+    margin-left: 20px;
+}
+
+input {
+    padding: 0.5rem;
+}
+
+li {
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.section__article--fourth {
+    background-color: var(--lightblue-color);
+    border-left: 3px solid var(--black-color);
+    border-bottom: 3px solid var(--black-color);
+    border-right: 1px solid var(--black-color);
+    border-top: 1px solid var(--black-color);
+    margin: 2rem;
     padding: 2rem;
 }
 
@@ -105,7 +132,7 @@ body {
 }
 
 footer {
-    background-color: var(--lightblue-color);
+    background-color: var(--bluegrey-color);
     width: 100%;
     display: block;
     text-align: center;
