@@ -17,48 +17,62 @@
         <h1 class="header__heading"><i class="fab fa-canadian-maple-leaf"></i> Lake View</h1>
         <h2 class="header__subheading">Newsletter 9</h2>
     </header>
-    <div class="container">
-        <section class="section">
-            <article class="section__article--first">
-                <h2 class="article__heading">General</h2>
-                <address class="article__author">By John Bull</address>
-                <p class="article__paragraph">We would like to thank everyone in our community for their support during
-                    the Banff fires. Members who would still like to contribute to our emergency fund should make sure
-                    that they have the correct banking details. Please read other sections of the letter and don't
-                    hesitate to email me your questions.</p>
-            </article>
 
-            <article class="section__article--second">
-                <h2 class="article__heading">Important Dates</h2>
-                <address class="article__author">By Cathy Palmer</address>
-                <p class="article__paragraph">Next month there will be an auction on all scuba gear at the Scooba
-                    Steve's
-                    Shop. Visitors are welcome to attend the aution. Remember to pre-register for this event.<br><br>
-                    The annual fun-run that was sceduled for next month has been postponed to a later date that will be
-                    sent
-                    through via e-mail.
-                </p>
-            </article>
+    <section class="section">
+        <article class="section__article--first">
+            <h2 class="article__heading">General</h2>
+            <address class="article__author">By John Bull</address>
+            <p class="article__paragraph">We would like to thank everyone in our community for their support during
+                the Banff fires. Members who would still like to contribute to our emergency fund should make sure
+                that they have the correct banking details. Please read other sections of the letter and don't
+                hesitate to email me your questions.</p>
+        </article>
 
-            <article class="section__article--third">
-                <h2 class="article__heading">Outlook Next Month</h2>
-                <address class="article__author">By Richard Raymond</address>
-                <p class="article__paragraph">New summer hiking trails will be annouced. New members can collect their
-                    hiking licence at reception. Old members that need to renew their hiking licence be sure to attend
-                    the monthly meeting on the 1st Saturday.</p>
-            </article>
-        </section>
-        <footer class="footer">
-            <p class="footer__paragraph">&copy; Lake View National Park Newsletter</p>
-            <p>Date 2021/09/01</p>
-            <div class="social-icons">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-facebook"></i>
-            </div>
-        </footer>
-    </div>
-    <script src="app.js"></script>
+        <article class="section__article--second">
+            <h2 class="article__heading">Important Dates</h2>
+            <address class="article__author">By Cathy Palmer</address>
+            <p class="article__paragraph">Next month there will be an auction on all scuba gear at the Scooba
+                Steve's
+                Shop. Visitors are welcome to attend the aution. Remember to pre-register for this event.<br><br>
+                The annual fun-run that was sceduled for next month has been postponed to a later date that will be
+                sent
+                through via e-mail.
+            </p>
+        </article>
+
+        <article class="section__article--third">
+            <h2 class="article__heading">Latest World News</h2>
+            <p class="article__paragraph">Enter a Topic and get your News</p>
+            <form class="search" id="search" action="">
+                <input class="input" id="input" type="text" placeholder="Enter Topic" />
+                <input type="submit" value="Submit" />
+            </form>
+            <p class="article__paragraph list-container">
+            <ul class="news-list" id="news-list">
+
+            </ul>
+            </p>
+        </article>
+
+        <article class="section__article--fourth">
+            <h2 class="article__heading">Outlook Next Month</h2>
+            <address class="article__author">By Richard Raymond</address>
+            <p class="article__paragraph">New summer hiking trails will be annouced. New members can collect their
+                hiking licence at reception. Old members that need to renew their hiking licence be sure to attend
+                the monthly meeting on the 1st Saturday.</p>
+        </article>
+    </section>
+    <footer class="footer">
+        <p class="footer__paragraph">&copy; Lake View National Park Newsletter</p>
+        <p>Date 2021/09/01</p>
+        <div class="social-icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+    </footer>
+
+    <script type="module" src="./js/app.js"></script>
 </body>
 
 </html>
